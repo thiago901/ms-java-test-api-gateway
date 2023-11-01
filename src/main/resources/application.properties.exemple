@@ -1,0 +1,13 @@
+
+server.port=8080
+
+spring.rabbitmq.addresses=someurl
+brocker.queue.player.create.name = player-create
+brocker.queue.player.list.name = players-list
+brocker.queue.player.show.name = player-show
+brocker.queue.player.delete.name = player-delete
+brocker.queue.player.update.name = player-update
+
+
+
+
