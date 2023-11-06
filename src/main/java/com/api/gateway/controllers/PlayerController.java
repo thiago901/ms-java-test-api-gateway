@@ -29,6 +29,12 @@ public class PlayerController {
   PlayerProducer playerProducer;
 
 
+  @GetMapping("/info")
+  public ResponseEntity<String> info(){
+    
+    
+    return ResponseEntity.status(HttpStatus.OK).body("Version 1.0.0");
+  }
   @PostMapping("/")
   public ResponseEntity<Object> createPlayer(
     @RequestBody RequestCreatePlayerDto body

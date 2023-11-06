@@ -9,6 +9,7 @@ ENV brocker.queue.player.update.name=player-update
 # Defina o diretório de trabalho no contêiner
 WORKDIR /app
 
+RUN ./mvnw package 
 # Copie o arquivo JAR do seu aplicativo para o contêiner
 COPY /target/api.gateway-0.0.1-SNAPSHOT.jar /app/api.gateway.jar
 
