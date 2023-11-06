@@ -20,8 +20,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Dar permissão de execução ao mvnw
-        run: chmod +x mvnw
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
         
       - name: Build JAR
         run: ./mvnw package
